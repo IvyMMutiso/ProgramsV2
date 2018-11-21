@@ -1,0 +1,23 @@
+@import "../../../styles/buttons.scss";
+
+.mat-card {
+    width: 95%;
+    margin: 8px;
+    background: white;
+    border: 0.5px gray solid;
+  }
+  
+  .mat-card-title {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    padding-top: 8px;
+  }
+
+  .title {
+      padding-top: 10px;
+  }
+
+  .view-icon {
+    color: #FFA500;
+  }

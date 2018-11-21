@@ -1,0 +1,16 @@
+@import "../../../styles/app-colors.scss";
+.nav {
+    background: $standard-label-color;
+    height: 100%;
+
+    a {
+        color: #fff;
+        padding: 20px;
+        display: block;
+    }
+
+    .activated {
+        background-color: $primary-color;
+    }
+    
+}

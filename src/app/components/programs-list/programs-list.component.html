@@ -1,0 +1,21 @@
+<h1>Programs List</h1>
+
+<mat-card *ngFor="let program of programs$">
+  <mat-card-content>
+    <div fxLayout="row" fxLayoutAlign="space-between start">
+      <div fxLayout="row" fxLayoutAlign="start start" class="title"> 
+          <mat-icon class="default-status" [ngClass]="program.status ? program.status :''" matTooltip="Program status"
+          matTooltipPosition="below">fiber_manual_record</mat-icon>
+          <span class="mat-card-title">{{ program.name }}</span>
+      </div>
+      <!-- <p>Status : {{ program.status }}</p> -->
+      <!-- <button mat-icon-button class="view-icon" (click)="viewActivities(program.id)" matTooltip="View program activities"
+        matTooltipPosition="below">
+        <mat-icon>remove_red_eye</mat-icon>  
+      </button> -->
+      <!-- <a routerLink="/details/{{program.id}}"> -->
+        <button mat-raised-button class="btn action-button" (click)="viewActivities(program.id)">VIEW ACTIVITIES</button>
+      <!-- </a> -->
+    </div>
+  </mat-card-content>
+</mat-card>
